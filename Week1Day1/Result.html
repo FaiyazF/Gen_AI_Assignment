@@ -1,0 +1,143 @@
+<html>
+<head>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F4F6F9;
+  }
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #0A66C2;
+    text-align: center;
+  }
+  .table-container {
+    margin-top: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f0f0f0;
+  }
+  .score-bar {
+    height: 20px;
+    background: linear-gradient(to right, #2E8B57, #0A66C2);
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .overall-score {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .low-score {
+    color: #D64545;
+  }
+  .medium-score {
+    color: #FFB020;
+  }
+  .high-score {
+    color: #0A66C2;
+  }
+  .excellent-score {
+    color: #2E8B57;
+  }
+  .improvement-recommendations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .executive-summary {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #0A66C2;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Healthcare User Story Quality Review</h1>
+
+  <div class="executive-summary">
+    The user story "Wards Dashboard Request" has been reviewed for clarity, completeness, business value alignment, testability, and technical feasibility. The review highlights areas for improvement to ensure compliance with healthcare standards and regulatory requirements.
+  </div>
+
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Score (out of 20)</th>
+      </tr>
+      <tr>
+        <td>Clarity</td>
+        <td>The story lacks detailed acceptance criteria and clear roles.</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Completeness</td>
+        <td>Preconditions and edge cases are not mentioned.</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Business Value Alignment</td>
+        <td>The story contributes to operational efficiency but lacks clear measurable value.</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Testability</td>
+        <td>Success/failure conditions are not clearly defined.</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>Technical Feasibility</td>
+        <td>The story is implementable but lacks consideration for EHR integration and audit logging.</td>
+        <td>15</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="visual-chart-section">
+    <div style="margin-bottom: 10px;">Clarity: <div class="score-bar" style="width: 60%;">12/20</div></div>
+    <div style="margin-bottom: 10px;">Completeness: <div class="score-bar" style="width: 50%;">10/20</div></div>
+    <div style="margin-bottom: 10px;">Business Value Alignment: <div class="score-bar" style="width: 80%;">16/20</div></div>
+    <div style="margin-bottom: 10px;">Testability: <div class="score-bar" style="width: 70%;">14/20</div></div>
+    <div style="margin-bottom: 10px;">Technical Feasibility: <div class="score-bar" style="width: 75%;">15/20</div></div>
+  </div>
+
+  <div class="overall-score medium-score">Overall Score: 67 / 100</div>
+
+  <div class="improvement-recommendations">
+    <h3>Improvement Recommendations:</h3>
+    <ul>
+      <li><b>Clarity:</b> Add explicit acceptance criteria for dashboard data visualization.</li>
+      <li><b>Completeness:</b> Specify preconditions for user access and data availability.</li>
+      <li><b>Testability:</b> Define clear success/failure conditions for dashboard loading.</li>
+      <li><b>Technical Feasibility:</b> Consider EHR integration and audit logging requirements.</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
