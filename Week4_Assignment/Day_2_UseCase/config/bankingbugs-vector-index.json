@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "type": "vector",
+      "path": "embedding",
+      "numDimensions": 1024,
+      "similarity": "cosine"
+    },
+    {
+      "type": "filter",
+      "path": "bugId"
+    },
+    {
+      "type": "filter",
+      "path": "bugTitle"
+    },
+    {
+      "type": "filter",
+      "path": "steps"
+    },
+    {
+      "type": "filter",
+      "path": "module"
+    },
+    {
+      "type": "filter",
+      "path": "moduleWise"
+    },
+    {
+      "type": "filter",
+      "path": "expectedResults"
+    },
+    {
+      "type": "filter",
+      "path": "actualResults"
+    },
+    {
+      "type": "filter",
+      "path": "acceptanceCriteria"
+    }
+  ]
+}
